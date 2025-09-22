@@ -1,0 +1,103 @@
+┌──(kali㉿kali)-[~/Desktop]
+└─$ nmap -sV -p 139 192.168.1.8 
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 15:54 IST
+Nmap scan report for 192.168.1.8
+Host is up (0.00038s latency).
+
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Microsoft Windows netbios-ssn
+MAC Address: 54:6C:EB:D0:A6:79 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.99 seconds
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop]
+└─$ nmap -sV -p 139 192.168.1.8 
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 15:55 IST
+Nmap scan report for 192.168.1.8
+Host is up (0.00038s latency).
+
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Microsoft Windows netbios-ssn
+MAC Address: 54:6C:EB:D0:A6:79 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.92 seconds
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop]
+└─$ nmap -sV -p 139 192.168.1.8 
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 15:56 IST
+Nmap scan report for 192.168.1.8
+Host is up (0.00048s latency).
+
+PORT    STATE SERVICE     VERSION
+139/tcp open  netbios-ssn Microsoft Windows netbios-ssn
+MAC Address: 54:6C:EB:D0:A6:79 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.88 seconds
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop]
+└─$ nmap -sV -p 135 192.168.1.8
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 15:56 IST
+Nmap scan report for 192.168.1.8
+Host is up (0.00041s latency).
+
+PORT    STATE SERVICE VERSION
+135/tcp open  msrpc   Microsoft Windows RPC
+MAC Address: 54:6C:EB:D0:A6:79 (Intel Corporate)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.88 seconds
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop]
+└─$  nmap -sV -p 49669 192.168.1.8
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 15:57 IST
+Nmap scan report for 192.168.1.8
+Host is up (0.00029s latency).
+
+PORT      STATE    SERVICE VERSION
+49669/tcp filtered unknown
+MAC Address: 54:6C:EB:D0:A6:79 (Intel Corporate)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 0.62 seconds
+                                                                                                                                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop]
+└─$ nmap -sV -p 20505 192.168.1.8
+
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-09-22 15:57 IST
+WARNING: Service 192.168.1.8:20505 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
+Nmap scan report for 192.168.1.8
+Host is up (0.00035s latency).
+
+PORT      STATE SERVICE VERSION
+20505/tcp open  rtsp
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port20505-TCP:V=7.95%I=7%D=9/22%Time=68D124AF%P=x86_64-pc-linux-gnu%r(G
+SF:enericLines,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20Cl
+SF:ose\r\n\r\n")%r(GetRequest,99,"HTTP/1\.0\x20200\x20OK\r\nDate:\x20Mon,\
+SF:x2022\x20Sep\x202025\x2010:27:59\x20GMT\r\nConnection:\x20Close\r\nCont
+SF:ent-Type:\x20application/json\r\n\r\n{\"errcode\":200,\"message\":\"MET
+SF:HOD_NOT_ALLOWED\"}")%r(HTTPOptions,99,"HTTP/1\.0\x20200\x20OK\r\nDate:\
+SF:x20Mon,\x2022\x20Sep\x202025\x2010:27:59\x20GMT\r\nConnection:\x20Close
+SF:\r\nContent-Type:\x20application/json\r\n\r\n{\"errcode\":200,\"message
+SF:\":\"METHOD_NOT_ALLOWED\"}")%r(RTSPRequest,99,"RTSP/1\.0\x20200\x20OK\r
+SF:\nDate:\x20Mon,\x2022\x20Sep\x202025\x2010:27:59\x20GMT\r\nConnection:\
+SF:x20Close\r\nContent-Type:\x20application/json\r\n\r\n{\"errcode\":200,\
+SF:"message\":\"METHOD_NOT_ALLOWED\"}")%r(FourOhFourRequest,99,"HTTP/1\.0\
+SF:x20200\x20OK\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2010:27:59\x20GMT\r
+SF:\nConnection:\x20Close\r\nContent-Type:\x20application/json\r\n\r\n{\"e
+SF:rrcode\":200,\"message\":\"METHOD_NOT_ALLOWED\"}")%r(SIPOptions,98,"SIP
+SF:/2\.0\x20200\x20OK\r\nDate:\x20Mon,\x2022\x20Sep\x202025\x2010:27:59\x2
+SF:0GMT\r\nConnection:\x20Close\r\nContent-Type:\x20application/json\r\n\r
+SF:\n{\"errcode\":200,\"message\":\"METHOD_NOT_ALLOWED\"}");
+MAC Address: 54:6C:EB:D0:A6:79 (Intel Corporate)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 12.92 seconds
