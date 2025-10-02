@@ -11,9 +11,9 @@ Zenmap (GUI for Nmap)
 
 Methodology
 
-1. Attempted a full TCP scan on all 65,535 ports across the subnet 192.168.1.1-254 using:
+1. Attempted a full TCP scan on all 65,535 ports across the subnet x.x.1.x-254 using:
 
-nmap -p 1-65535 -T4 -A -v 192.168.1.1-254
+nmap -p 1-65535 -T4 -A -v x.x.x.x-x
 
 This scan was very large and took a long time to complete.
 2. Saved partial results from Zenmap after several hours of scanning.
@@ -34,7 +34,7 @@ Scan specific ports (e.g., 22, 80, 443, 3306) for faster results.
 Results
 
 The raw scan output is saved in <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -p 1-65535 -T4 -A -v 192.168.1.1-254" profile_name="Intense scan, all TCP ports" scanner="nmap" start="1758518863" startstr="Mon Sep 22 10:57:43 2025" version="7.97" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.97 ( https://nmap.org ) at 2025-09-22 10:57 +0530
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -p 1-65535 -T4 -A -v 192.x.x.x-254" profile_name="Intense scan, all TCP ports" scanner="nmap" start="1758518863" startstr="Mon Sep 22 10:57:43 2025" version="7.97" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.97 ( https://nmap.org ) at 2025-09-22 10:57 +0530
 NSE: Loaded 158 scripts for scanning.
 NSE: Script Pre-scanning.
 Initiating NSE at 10:57
